@@ -10,7 +10,7 @@
     <!-- free code camp test suit -->
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <nav class="navbar column" id="navbar" >
-        <header style="padding-left: 10px;">JS Documentation</header>
+        <header>JS Documentation</header>
         <ul>
             <li><a href="#Introduction" class="nav-link">Introduction</a></li>
             <li><a href="#What_you_should_already_know" class="nav-link">What you should already know</a></li>
@@ -80,8 +80,10 @@
             <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript
                 code:</p>
             <code>
-                function greetMe(yourName) { alert("Hello " + yourName); }
-greetMe("World");
+                function greetMe(yourName) { 
+                    alert("Hello " + yourName); 
+                }
+                greetMe("World");
             </code>
             <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
         </section>
@@ -144,8 +146,11 @@ greetMe("World");
             <p>You cannot declare a constant with the same name as a function or variable in the same scope. For
                 example:</p>
             <code>
-                // THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL
-                CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements
+                // THIS WILL CAUSE AN ERROR 
+                function f() {}; const f = 5; 
+                // THIS WILL CAUSE AN ERROR ALSO 
+                 function f() { const g = 5; var g; 
+                //statements
                 }
             </code>
             <p>However, object attributes are not protected, so the following statement is executed without problems.
@@ -180,8 +185,10 @@ greetMe("World");
             <p>condition can be any expression that evaluates to true or false. See Boolean for an explanation of what evaluates to true and false. If condition evaluates to true, statement_1 is executed; otherwise, statement_2 is executed. statement_1 and statement_2 can be any statement, including further nested if statements.</p>
             <p>You may also compound the statements using else if to have multiple conditions tested in sequence, as follows:</p>
             <code>
-                if (condition_1) { statement_1; } else if (condition_2) { statement_2;
-                } else if (condition_n) { statement_n; } else { statement_last; }
+                if (condition_1) { statement_1; } 
+                else if (condition_2) { statement_2;} 
+                else if (condition_n) { statement_n; } 
+                else { statement_last; }
             </code>
             <p>In the case of multiple conditions only the first logical condition which evaluates to true will be executed. To execute multiple statements, group them within a block statement ({ ... }) . In general, it's good practice to always use block statements, especially when nesting if statements:</p>
             <code>
